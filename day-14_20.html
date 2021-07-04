@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day-14_20</title>
+</head>
+<style>
+    div{
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 150px;
+        background-color: lightgray;
+    }
+
+</style>
+
+<body>
+<h2>week03 회고</h2>
+<div>
+    6-22<br/>
+    스택 구조 공부<br/>
+    함수의 호출과 관계되는 지역변수, 매개변수, 리턴 값등의 임시데이터를 저장하는 메모리의 공간<br/>
+    top : 스택의 맨 윗 공간을 뜻한다. PUSH로 들어온 값을 최상단에 저장<br/>
+    bottom : 스택의 맨 아래, 가장 처음 PUSH로 받은 것<br/>
+    push : 스택에 새로운 데이터 추가<br/>
+    pop : 스택 TOP에 있는 데이터를 빼간다<br/>
+</div>
+<div>
+    6-23<br/>
+    "이항계수로 두 개씩 쪼개간다.<br/>
+    (n+1) = (n) + (n)<br/>
+    r+1       r      r+1<br/>
+    경우의 수를 고르는 것<br/>
+    (a + b)3 = (a + b)(a + b)(a + b)<br/>
+    → (a + b1)(a + b2)(a + b3)<br/>
+    → a3 + (b1 + b2 + b3)a2 + (b1b2 + b2b3 + b3b1)a + (b1b2b3)a0<br/>
+    print(fabonachi(n-1, k-1)+fabonachi(n-1, k))<br/>
+</div>
+<div>
+    2021. 6. 24<br/>
+    자바스크립트 변수 선언<br/>
+    let : 변수 재선언, 변수 재할당 가능<br/>
+    const :  변수 재선언, 변수 재할당 모두 불가능"<br/>
+    "==" 는 비교하는 두 값의 데이터타입이 일치하지 않을 때 해당 값의 데이터타입을 자동으로 변환해주는 자바스크립트만의 특성<br/>
+    "===" 는 엄밀한 (strict) 일치연산자여서 비교하는 두 값의 데이터타입과 값 자체가 정확히 일치해야만 true를 리턴<br/>
+    "console.log(1 === ""1"") // false를 출력<br/>
+    console.log(1 == ""1"" // true를 출력"<br/>
+</div>
+<div>
+    06-25<br/>
+    "brace 함수 블럭<br/>
+    arrow 펑션의 this<br/>
+    promise가 없으면 어떻게되나<br/>
+    시간차 순서에 따라서 움직이는 것일까(call back)<br/>
+    -<br/>
+    this란 함수객체의 메서드에 접근하는 방법<br/>
+    문제의식: 만약 함수객체가 나라면 어떻게 접근할 것인가. 타 함수객체는 타 함수이름을 쓰면되는데 나의 메세드에 들어갈려면?<br/>
+    해결 : 타 함수객체로 메서드를 호출하듯이 THIS를 사용하여 나에게 접근한다<br/>
+</div>
+<div>
+    06-26<br/>
+    리소스 중심으로 생각하기<br/>
+    -rest API 3가지 형식<br/>
+    1. 자원(Resource) - URL<br/>
+    2. 행위 - HTTP method<br/>
+    3. 표현 - JSON, XML<br/>
+</div>
+
+</body>
+</html>
