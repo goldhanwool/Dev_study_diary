@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day-21_27</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        width: 100%;
+        height: 800px;
+        background-color: lightgreen;
+    }
+
+    .inner_box {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 100px;
+        width: 70%;
+        height: 400px;
+        background-color: lightgray;
+        text-align: center;
+    }
+</style>
+<body>
+<h1>week04 회고</h1>
+<div class="container">
+    <div class="inner_box">
+        <div>
+            06-28<br/>
+            app과 몽고디비연결하기<br/>
+            POSTMAN으로 POST,PUT,DELETE로 디비와 통신 이해하기<br/>
+        </div>
+
+        <div>
+            06-29<br/>
+            route로 몽고디비 통신 부분 분리하기<br/>
+        </div>
+        <div>
+            06-30<br/>
+            post 방식은 body-parser이 있어야함<br/>
+        </div>
+        <div>
+            07-01<br/>
+            비밀번호 비교시 공백 넣으면 비교할 방법이 없다<br/>
+            1234\r\n 이렇게 뜬다<br/>
+        </div>
+        <div>
+            07-02<br/>
+            노드 환경 세팅과정<br/>
+            npm init -y //package-lock.json생성<br/>
+            npm install nodemon //package.json 파일 내 script => "dev" : "nodemon (실행할 js파일 이름 확장자 포함)" => 터미널에서 node run dev 입력<br/>
+            npm i express -S<br/>
+            npm i mongoose<br/>
+
+            get은 body에 데이터를 실을 수 없다<br/>
+        </div>
+        <div>
+            07-03<br/>
+            targetTodo.order = todo.order;<br/>
+            targetTodo라는 함수객체의 order 메서드를 todo의 order로 할당<br/>
+        </div>
+    </div>
+</body>
+</html>
