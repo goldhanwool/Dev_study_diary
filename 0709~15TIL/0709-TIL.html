@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>07-09</title>
+</head>
+
+<body>
+  <h2>데이터 상호 이동</h2>
+  <ol>
+      <li>res.send()</li>
+  </ol><br/>
+  <h3>내용</h3>
+  <dl>
+    <dt>Express 서버가 HTTP 요청을 받게되면, res를 반환</dt>
+      <dt>res.send('result':'result', 'response': 'success')</dt>
+    <dt>res.send()는 기본적으로 response를 보내는 역할</dt>
+    <dt>response 처리를 할 때 Content-Type을 지정</dt>
+    <dt>'res.send는 우리가 어떤 데이터를 보내는지 파악을 해서 이에 알맞게 Contnet-Type을 지정해준다. 이는 Buffer,String, Object, Array 일 수 있다.
+예를 들어서 Buffer 데이터를 반환해준다면 res.send는 자동으로 Content-Type을 application/octet-stream으로 지정한다.'</dt>
+      <dt>res.send에서 보낸 메세지를 프론트에서 해독 할 떄 JSON 함수로 데이터를 변환 : 예시 => alert(JSON.stringify(data ));</dt>
+      <dt>모듈: 기본적으로 제공하는 기능 뿐 아니라 추가적으로 기능을 사용할 때 가져다 쓸 수 있는 라이브러리</dt>
+  </dl>
+</body>
+</html>
+
+
+
+
+, ,

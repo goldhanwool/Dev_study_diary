@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>07-14</title>
+</head>
+
+<body>
+  <h2>render 예시(펌)</h2>
+  <ol>
+      <li>그리고 그 js파일 상의 로직으로 인해 변경되는 값을 HTML로 즉각 쏴주는 것이 EJS다.
+이때 entry point -> EJS로 데이터를 전송하는 역할을 하는 함수가 render() 함수이다.
+만약 EJS를 사용하지 않고 기본적인 HTML만을 사용한다면,
+클라이언트로부터 온 request에 대한 response를 일일이 send 또는 sendFile 해야할 것이다.
+하지만 EJS는 기존 HTML코드와 JavaScript코드의 공존을 통해 효율적인 개발을 도와준다.
+render() 함수를 사용하기 위해 우리는 역시나 Node Express 상의 get() 또는 post() 함수를 이용한다.</li>
+
+
+      <li>router.get('/', function(req, res, next) {<br/>
+   var p1 = req.query["p1"];<br/>
+   var p2 = req.query.p2;<br/>
+   var msg = p1 == undefined ? "" : p1 + "," + p2;<br/>
+   res.render('helo',<br/>
+       {<br/>
+           title: 'HELO Page',<br/>
+           msg: msg,<br/>
+           input: ''<br/>
+       }<br/>
+   );<br/>
+});<br/>
+      </li>
+      <li>참조 : res.redirect('/?valid=' + string);</li>
+  </ol>
+</body>
+</html>
+
+
+
+
